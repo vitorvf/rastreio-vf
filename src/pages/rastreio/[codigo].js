@@ -11,25 +11,26 @@ const Rastreio = ({ response }) => {
   const router = useRouter()
   const { codigo = "" } = router.query
   const [result, setResult] = useState()
+  const [loading, setLoading] = useState(false)
 
   useEffect(() => {
     if (!codigo) return
     ;(async () => {
       // Roda quando montar o component
       try {
+        setLoading(true)
         const response = await api.get(`/${codigo}`)
         setResult(response.data)
       } catch {
+        setLoading(false)
         console.log("erro do console")
       }
     })()
   }, [codigo])
 
-  // if (!codigo) return <p>Sem código de rastreio</p>
-  // if (result?.success === true) {
-  // }
   return (
     <div>
+    
       <Resultado data={result} />
     </div>
   )

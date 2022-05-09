@@ -10,8 +10,6 @@ import {
 } from "../styles/infostyle"
 
 export default function Resultado({ data }) {
-  // if (data?.success == true) {
-  // }
 
   return (
     <div>

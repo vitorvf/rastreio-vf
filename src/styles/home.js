@@ -46,3 +46,8 @@ export const Card = styled.div`
     width: 100%;
   }
 `
+export const Errormessage = styled.p`
+  font-size: 1.3rem;
+  color: red;
+  margin-bottom: 15px;
+`
