@@ -37,7 +37,7 @@ export const Card = styled.div`
   button {
     padding: 11px 30px;
     color: white;
-    background: var(--rosa);
+    background: var(--green);
     border: none;
     border-radius: 6px;
     font-size: 1rem;

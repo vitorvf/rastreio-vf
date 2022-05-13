@@ -3,6 +3,7 @@ import Link from "next/link"
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 import Home from ".."
+import Loading from "../../components/Loading"
 
 import { api } from "../../services/api"
 import Resultado from "../results"
@@ -24,13 +25,17 @@ const Rastreio = ({ response }) => {
       } catch {
         setLoading(false)
         console.log("erro do console")
+      } finally {
+        const response = await api.get(`/${codigo}`)
+        setResult(response.data)
+        setLoading(false)
       }
     })()
   }, [codigo])
+  if (loading) return <Loading />;
 
   return (
     <div>
-    
       <Resultado data={result} />
     </div>
   )

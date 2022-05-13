@@ -5,7 +5,7 @@ export default function Header() {
     <HeaderContainer>
       <HeaderContent>
         <img src="/images/caminhao.png" alt="ig.news" />
-        <nav>
+        {/* <nav>
           <Link href="/">
             <a>Home</a>
           </Link>
@@ -13,7 +13,7 @@ export default function Header() {
           <Link href="/results">
             <a>results</a>
           </Link>
-        </nav>
+        </nav> */}
         <button>Codigo de fonte</button>
       </HeaderContent>
     </HeaderContainer>

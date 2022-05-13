@@ -86,41 +86,93 @@ export const HeaderResults = styled.header`
     color: #333333;
   }
 `
-// export const InfoResults = styled.div`
-//   ul {
-//     margin: 0px auto;
-//     width: 100%;
-//     background: white;
-//     border-radius: 8px;
-//     overflow-y: auto;
-//     max-height: 45rem;
-//     box-shadow: 0px 18px 41px rgba(0, 0, 0, 0.05);
-//   }
 
-//   li {
-//     background: red;
-//     padding: 20px 30px;
-//     display: grid;
-//     gap: 20px;
-//     -webkit-box-align: center;
-//     align-items: center;
-//     grid-template-columns: 1fr 1fr;
-//     color: #333333;
-//   }
+export const ContornPosition = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 24px;
+  max-width: 870px;
+  margin: 80px auto;
+  max-width: 870px;
+  overflow: hidden;
+`
 
-//   div {
-//     display: flex;
-//   }
+export const CardDiv = styled.div`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 86px;
+  position: relative;
 
-//   h5 {
-//     font-weight: 400;
-//     font-size: 1.5rem;
-//     color: #333333;
-//   }
+  div {
+    text-align: center;
+  }
 
-//   p {
-//     margin: 3px 5px 0px 0px;
-//     font-size: 1rem;
-//     color: #333333;
-//   }
-// `
+  .linha {
+    text-align: center;
+    background-color: #c8cdda;
+    display: block;
+    height: 2px;
+    left: 115px;
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+    width: 206px;
+    z-index: 2;
+    background-color: #c8cdda;
+  }
+
+  h5 {
+    color: #c8cdda;
+    font-weight: 600;
+  }
+
+  span {
+    color: #3b3f51;
+    font-size: 14px;
+  }
+
+  .imgspan {
+    background-image: url("/images/postado-cinza.png");
+    display: block;
+    height: 40px;
+    position: relative;
+    width: 40px;
+    z-index: 3;
+    background-size: contain;
+  }
+
+  .imgspan2 {
+    background-image: url("/images/encaminhado-cinza.png");
+    display: block;
+    height: 40px;
+    position: relative;
+    width: 40px;
+    z-index: 3;
+    /* background: url(https://i.imgur.com/NnvD3kZ.png) 0 0 no-repeat; */
+    background-size: contain;
+  }
+
+  .imgspan3 {
+    background-image: url("/images/saiu-cinza.png");
+    display: block;
+    height: 40px;
+    position: relative;
+    width: 40px;
+    z-index: 3;
+    /* background: url(https://i.imgur.com/NnvD3kZ.png) 0 0 no-repeat; */
+    background-size: contain;
+  }
+
+  .imgspan4 {
+    background-image: url("/images/entregue-cinza.png");
+    display: block;
+    height: 40px;
+    position: relative;
+    width: 40px;
+    z-index: 3;
+    /* background: url(https://i.imgur.com/NnvD3kZ.png) 0 0 no-repeat; */
+    background-size: contain;
+  }
+`

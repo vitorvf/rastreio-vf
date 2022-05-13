@@ -59,7 +59,7 @@ export const HeaderContent = styled.div`
     margin-left: auto;
     height: 3rem;
     border-radius: 3rem;
-    background: var(--rosa);
+    background: var(--green);
     border: 0;
     padding: 0 1.5rem;
 
