@@ -167,7 +167,7 @@ export default function Resultado({ data }) {
               {data?.data.events.map((status) => (
                 <li>
                   <div>
-                    <h5>{status.events}</h5>
+                    <h5 className="h5-left">{status.events}</h5>
                     <div className="p-time">
                       <p>{status.date}</p>
                       <p>{status.company?.name}</p>
