@@ -9,9 +9,13 @@ Bastas digitar o código de rastreio, e se valido, é retornada todas as informa
 ## ✨ Demonstração
 ![Screenshot_20210302_142426](https://i.imgur.com/2KwpLw3.png)
 
+## ℹ️ Responsivo
+![Screenshot_20210302_142426](https://i.imgur.com/wUkVnpY.png)
 
 
-Resultado Final: https://netflix-react-clonee.netlify.app/
+
+Resultado Final: https://
+
 
 
 
