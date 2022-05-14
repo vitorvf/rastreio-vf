@@ -30,6 +30,7 @@ export default function Home() {
               value={input}
               onChange={(event) => setInput(event.target.value)}
               type="text"
+              placeholder="Insira o código de rastreio"
               style={{ border: error ? "1px solid red" : "" }}
             />
             {!!error && <Errormessage>{error}</Errormessage>}

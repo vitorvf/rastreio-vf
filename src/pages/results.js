@@ -9,15 +9,20 @@ import {
   ContornPosition,
   CardDiv,
 } from "../styles/infostyle"
+import { HeaderContainer, HeaderContent } from "../components/Header/style"
 
 export default function Resultado({ data }) {
-  // if (data?.data?.events[0].tag === "posted") {
-  //   console.log("POSTADO")
-  // }
-
   return (
     <div>
-      <Header />
+      <HeaderContainer>
+        <HeaderContent>
+          <img src="/images/caminhao.png" alt="caminhao" />
+
+          <button>
+            <p>{data?.data?.company.name}</p> : {data?.data?.tracking_code}
+          </button>
+        </HeaderContent>
+      </HeaderContainer>
 
       <Container>
         <SectionResults>
@@ -46,7 +51,7 @@ export default function Resultado({ data }) {
                     >
                       Postado
                     </h5>
-                    <span>13/12/2021 08:34:00</span>
+                    <span>{data?.data.events[0].date}</span>
                   </div>
 
                   <div
@@ -81,7 +86,7 @@ export default function Resultado({ data }) {
                     >
                       Encaminhado
                     </h5>
-                    <span>13/12/2021 08:34:00</span>
+                    <span>{data?.data.events[1].date}</span>
                   </div>
 
                   <div
@@ -116,7 +121,7 @@ export default function Resultado({ data }) {
                     >
                       Saiu para a entrega
                     </h5>
-                    <span>13/12/2021 08:34:00</span>
+                    <span>{data?.data.events[4].date}</span>
                   </div>
 
                   <div
@@ -151,7 +156,7 @@ export default function Resultado({ data }) {
                     >
                       Entregue
                     </h5>
-                    <span>13/12/2021 08:34:00</span>
+                    <span>{data?.data.events[5].date}</span>
                   </div>
                 </CardDiv>
               </ContornPosition>
@@ -160,14 +165,13 @@ export default function Resultado({ data }) {
               <h3>Status</h3>
               <h3>Movimentação</h3>
             </HeaderResults>
-
-            {/* {data?.success === false && <h1>ERRO</h1>} */}
+            {!data?.success && <h1>{data?.message}</h1>}
 
             <ul>
-              {data?.data.events.map((status) => (
+              {data?.data?.events.map((status) => (
                 <li>
                   <div>
-                    <h5 className="h5-left">{status.events}</h5>
+                    <h5 className="h">{status.events}</h5>
                     <div className="p-time">
                       <p>{status.date}</p>
                       <p>{status.company?.name}</p>

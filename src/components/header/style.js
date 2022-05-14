@@ -4,11 +4,17 @@ export const HeaderContainer = styled.header`
   height: 5rem;
   border-bottom: 1px solid var(--gray-800);
   box-shadow: 0px 18px 41px rgba(0, 0, 0, 0.05);
+  background: var(--full-white);
+  z-index: 5;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
 `
 
 export const HeaderContent = styled.div`
   /* max-width: 1120px; */
-  height: 4rem;
+  height: 5rem;
   margin: 0 auto;
   padding: 0 2rem;
 
@@ -90,8 +96,34 @@ export const HeaderContent = styled.div`
     }
   }
 
+  .img-git {
+    width: 51px;
+    margin-left: auto;
+    height: 3rem;
+    border-radius: 3rem;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+  }
+
   img {
-    width: 104px;
-    height: 104px;
+    width: 170px;
+    height: 78px;
+  }
+
+  /* max device width */
+  @media screen and (max-device-width: 480px) {
+    img {
+      display: none;
+    }
+
+    button {
+      padding: 0 4.5rem;
+    }
+
+    
   }
 `

@@ -1,3 +1,3 @@
-export default function Errocrl() {
+export default function Erro() {
   return <div>Erro Nessa caralha</div>
 }

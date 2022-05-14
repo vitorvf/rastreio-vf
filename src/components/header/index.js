@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <HeaderContainer>
       <HeaderContent>
-        <img src="/images/caminhao.png" alt="ig.news" />
+        <img src="/images/caminhao.png" alt="correios" />
         {/* <nav>
           <Link href="/">
             <a>Home</a>
@@ -14,7 +14,8 @@ export default function Header() {
             <a>results</a>
           </Link>
         </nav> */}
-        <button>Codigo de fonte</button>
+        <img className="img-git" src="/images/git2.png"></img>
+        {/* <button>Codigo de fonte</button> */}
       </HeaderContent>
     </HeaderContainer>
   )

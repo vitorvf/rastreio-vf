@@ -12,7 +12,7 @@ export const SectionResults = styled.section`
   button {
     padding: 11px 30px;
     color: white;
-    background: var(--rosa);
+    background: var(--green);
     border: none;
     border-radius: 6px;
     font-size: 1rem;
@@ -127,6 +127,12 @@ export const CardDiv = styled.div`
     width: 206px;
     z-index: 2;
     background-color: #c8cdda;
+
+    /* max device width */
+    @media screen and (max-device-width: 480px) {
+      left: 48px;
+      width: 108px;
+    }
   }
 
   h5 {

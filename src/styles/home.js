@@ -8,6 +8,7 @@ export const Container = styled.div`
   align-items: center;
   height: 100vh;
   text-align: center;
+  background-image: url("/images/background.png");
 `
 export const Card = styled.div`
   padding: 30px;
@@ -44,6 +45,10 @@ export const Card = styled.div`
     cursor: pointer;
     transition: all 0.3s ease 0s;
     width: 100%;
+  }
+  /* max device width */
+  @media screen and (max-device-width: 480px) {
+    max-width: 370px;
   }
 `
 export const Errormessage = styled.p`

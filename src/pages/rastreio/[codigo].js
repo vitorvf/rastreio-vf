@@ -3,6 +3,7 @@ import Link from "next/link"
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 import Home from ".."
+import Erro from "../../components/Erro"
 import Loading from "../../components/Loading"
 
 import { api } from "../../services/api"
@@ -29,11 +30,14 @@ const Rastreio = ({ response }) => {
         const response = await api.get(`/${codigo}`)
         setResult(response.data)
         setLoading(false)
+        console.log(response.data.success)
       }
     })()
   }, [codigo])
-  if (loading) return <Loading />;
-
+  if (loading) return <Loading />
+  
+  
+  // console.log(result?.success)
   return (
     <div>
       <Resultado data={result} />
