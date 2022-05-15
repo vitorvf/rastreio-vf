@@ -1,4 +1,11 @@
 # 📦 Rastreio VF
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
+![Yarn](https://img.shields.io/badge/yarn-%232C8EBB.svg?style=for-the-badge&logo=yarn&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+
+
 Rastreamento de encomendas através de uma API.
 
 ## ℹ️ Sobre o projeto 
@@ -25,6 +32,7 @@ Para a realização desse projeto foi utilizado as seguintes tecnologias/linguag
 - [API](https://api.melhorrastreio.com.br/api)
 - [Styled components](https://styled-components.com)
 - [Next-Router](https://nextjs.org/docs/api-reference/next/router)
+- [Axios](https://axios-http.com/ptbr/docs/intro)
 
 
 ## ⚙️ Instalação
