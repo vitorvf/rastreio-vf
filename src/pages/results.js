@@ -7,7 +7,7 @@ import {
   ContornPosition,
   CardDiv,
 } from "../styles/infostyle"
-import { HeaderContainer, HeaderContent } from "../components/Header/style"
+import { HeaderContainer, HeaderContent } from "../components/header/style"
 
 export default function Resultado({ data }) {
   return (
