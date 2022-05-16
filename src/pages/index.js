@@ -31,7 +31,7 @@ export default function Home() {
               onChange={(event) => setInput(event.target.value)}
               type="text"
               placeholder="Insira o código de rastreio"
-              style={{ border: error ? "1px solid red" : "" }}
+              style={{ border: error ? "1px solid red" : "#22234" }}
             />
             {!!error && <Errormessage>{error}</Errormessage>}
 

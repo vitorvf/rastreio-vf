@@ -168,8 +168,8 @@ export default function Resultado({ data }) {
             {!data?.success && <h1>{data?.message}</h1>}
 
             <ul>
-              {data?.data?.events.map((status) => (
-                <li>
+              {data?.data?.events.map((status, index) => (
+                <li key={index}>
                   <div>
                     <h5 className="h">{status.events}</h5>
                     <div className="p-time">
