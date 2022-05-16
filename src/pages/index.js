@@ -1,5 +1,5 @@
 import { useState } from "react"
-import Header from "../components/Header"
+import Header from "../components/header"
 import { api } from "../services/api"
 import { Container, Card, Errormessage } from "../styles/home"
 import { useRouter } from "next/router"

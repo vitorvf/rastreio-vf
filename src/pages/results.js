@@ -1,6 +1,4 @@
-import Header from "../components/Header"
 import Link from "next/link"
-// import Rastreio from "../../pages/rastreio/[codigo]"
 import {
   HeaderResults,
   Container,

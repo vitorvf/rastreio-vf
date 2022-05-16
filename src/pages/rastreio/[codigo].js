@@ -2,9 +2,8 @@ import { responseSymbol } from "next/dist/server/web/spec-compliant/fetch-event"
 import Link from "next/link"
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
-import Home from ".."
-import Erro from "../../components/Erro"
-import Loading from "../../components/Loading"
+
+import Loading from "../../components/loading"
 
 import { api } from "../../services/api"
 import Resultado from "../results"
@@ -35,9 +34,7 @@ const Rastreio = ({ response }) => {
     })()
   }, [codigo])
   if (loading) return <Loading />
-  
-  
-  // console.log(result?.success)
+
   return (
     <div>
       <Resultado data={result} />
