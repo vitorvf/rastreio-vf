@@ -3,7 +3,7 @@ import Link from "next/link"
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 
-import Loading from "../../components/loading"
+import Loading from "../../components/Loading"
 
 import { api } from "../../services/api"
 import Resultado from "../results"
