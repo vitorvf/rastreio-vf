@@ -13,7 +13,6 @@ export const HeaderContainer = styled.header`
 `
 
 export const HeaderContent = styled.div`
-  /* max-width: 1120px; */
   height: 5rem;
   margin: 0 auto;
   padding: 0 2rem;
@@ -123,7 +122,5 @@ export const HeaderContent = styled.div`
     button {
       padding: 0 4.5rem;
     }
-
-    
   }
 `

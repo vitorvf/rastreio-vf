@@ -1,5 +1,4 @@
 import { HeaderContainer, HeaderContent } from "./style"
-import Link from "next/link"
 export default function Header() {
   return (
     <HeaderContainer>
